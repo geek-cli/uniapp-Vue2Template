@@ -1,0 +1,31 @@
+{
+	"easycom": {
+		"autoscan": true,
+	  "custom": {
+		"uni-(.*)": "@/uni_modules/uni-$1/components/uni-$1/uni-$1.vue",
+		"znx-(.*)": "@/commonComponents/$1.vue" // 匹配components目录内的vue文件
+	  }
+	},
+	"pages": [
+		{
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom",
+		"app-plus": {
+			"scrollIndicator": "none",
+			"bounce": "none"
+		}
+	}
+}
